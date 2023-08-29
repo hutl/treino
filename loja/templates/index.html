@@ -24,13 +24,13 @@
     <div class="card bg-transparent">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
           <img src="{{produto.imagem.url}}" class="img-fluid">
-       
+          <a href="{% url 'detalhe' produto.pk %}"></a>
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
           </a>
         </div>
         <div class="card-body">
           <h5 class="card-title">{{produto.nome_prod}}</h5>
-          
+          <a href="{% url 'detalhe' produto.pk %}">Mais</a>
         </div>
       </div>
     </div>
